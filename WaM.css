@@ -1,6 +1,6 @@
 body {
     padding: 15px;
-    background-image: radial-gradient(rgba(0, 0, 0, 0.1), rgba(63, 63, 63, 0.8)), url(images/Background.jpg);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.1), rgba(63, 63, 63, 0.8)), url(images/Background.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -81,3 +81,25 @@ li {
 .timer {
     font-size: 75%;
 }
+
+
+#message {
+    /* animation-name: messageShow; */
+    animation-duration: 800ms;
+    opacity: 0;
+    width: 17rem;
+    color: goldenrod;
+    text-shadow: 5px 5px 5px #121212, 5px 5px 5px #ababab;
+    font-size: 400%;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    bottom: 31rem;
+}
+
+@keyframes messageShow {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+

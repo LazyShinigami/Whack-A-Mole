@@ -32,7 +32,6 @@ function countDown() {
     }
 }
 
-
 // =========================================================
 
 // CREATTING A MOLE ON A RANDOM TILE FOR 60 SECS
@@ -63,7 +62,8 @@ function moveMole() {
         moleGenerator()
     }
 }
-
+console.log(window.innerWidth);
+console.log(window.innerHeight);
 // =========================================================
 
 // POINT SYSTEM
@@ -75,7 +75,20 @@ const score = document.querySelector("#score")
 function niceHit() {
     moleImage.removeEventListener("mousedown", niceHit)
     points += 100
+    // showMessage()
     score.textContent = points
+    // setInterval(remover, 100)
 }
+
+// function showMessage() {
+//     let message = document.getElementById("message")
+//     message.style.animationName = "messageShow"    
+// }
+// function remover() {
+//     let message = document.getElementById("message")
+//     message.style.removeProperty(animationName)
+// }
+
+
 
 
